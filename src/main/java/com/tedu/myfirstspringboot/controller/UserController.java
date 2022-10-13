@@ -143,7 +143,7 @@ public class UserController {
 
         try {
             response.setContentType("text/html;charset=utf-8");
-            PrintWriter pw = response.getWriter();
+            PrintWriter pw = response.getWriter();  // response內的getWriter()方法可以直接讀寫文字到瀏覽器(不一定要給他檔案)，傳回PrintWrite類
             pw.println("<!DOCTYPE html>");
             pw.println("<html lang=\"en\">");
             pw.println("<head>");
